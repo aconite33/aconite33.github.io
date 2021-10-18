@@ -43,7 +43,7 @@ h2:after {
 
 h1 {
   font-size: 300%; }
-
+h2 { font-size: 270%; }
 a {
   color: #1B1C1D; }
 
@@ -93,7 +93,7 @@ nav {
 
 /* main */
 main {
-  padding: 0 0 30px; }
+  padding: 0 0 0px; }
   main #masthead {
     background-color: #1B1C1D;
     background-size: cover;
@@ -105,15 +105,16 @@ main {
     box-shadow: inset 0 0 250px #000; }
     main #masthead i {
       color: #96e575;
-      font-size: 500%;
+      font-size: 120px;
       margin-bottom: 10px; }
     main #masthead h1 {
       color: #96e575;
       text-align: center; }
     main #masthead .col {
-      max-width: 900px;
+      max-width: 800px;
       margin: 0 auto;
-      padding: 7% 0; }
+      padding: 7% 0;
+    font-size: 20px; }
   main .content-container {
     padding: 3% 0; }
     main .content-container i.lg-icon {
@@ -189,3 +190,55 @@ footer {
     margin-bottom: -1px; } }
 
 /*# sourceMappingURL=app.css.map */
+
+#interior-masthead {
+  background-color:#000; 
+  color:#FFF;
+  line-height: 1.4em;
+  border-bottom: 5px solid #96e575; 
+ }
+ #interior-masthead h1 { 
+   color: #96e575; 
+ }
+ #interior-masthead i { 
+   color: #96e575; 
+   position: absolute;
+   left: 20px;
+   font-size: 50px;
+ }
+  #interior-masthead .content-container { 
+    max-width: 750px;
+    padding-left: 100px; 
+    position: relative;
+  }
+
+.padded-container { 
+  padding-top: 70px;
+  padding-bottom: 70px;
+}  
+.large-icon { font-size: 200px; }
+
+.grey-bg { background-color: #F7F7F7; }
+.black-bg { background-color:#000; color: #FFF; }
+.black-bg h2, .black-bg h3, .black-bg a { color: #96e575 }
+.black-bg .btn { border: 1px solid #96e575; color: #96e575; background-color: transparent; }
+.md-icon { font-size: 50px; }
+.padded-content { padding: 35px; }
+
+.accordion-button:not(.collapsed) {
+  color: #FFF;
+  background-color: #000;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+.grey-box {
+  background-color: #F7F7F7;
+  padding: 35px;
+  border: 10px solid #FFF; 
+}
+
+#interior-masthead nav {
+  background-color: transparent;
+  color:#FFF;
+}
+.breadcrumb-item.active, .breadcrumb-item+.breadcrumb-item::before { color: #FFF; }
+#interior-masthead nav a { color: #96e575; }
