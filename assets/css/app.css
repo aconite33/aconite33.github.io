@@ -30,7 +30,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   line-height: 90%; }
-
+@media only screen and (max-width: 600px) {
+  h1 { font-size: 30px !important;}
+}
 h2:after {
   content: "";
   position: absolute;
@@ -116,9 +118,12 @@ main {
       padding: 7% 0;
     font-size: 20px; }
   main .content-container {
-    padding: 3% 0; }
+    padding-top: 3% ;
+  padding-bottom: 3%; }
     main .content-container i.lg-icon {
-      font-size: 300%; }
+      font-size: 200%; display: inline; }
+      .inline { display: inline; }
+      .inline:after { border: 0px !important; }
 
 /* footer */
 footer {
@@ -195,29 +200,44 @@ footer {
   background-color:#000; 
   color:#FFF;
   line-height: 1.4em;
-  border-bottom: 5px solid #96e575; 
+/*   border-bottom: 5px solid #96e575;  */
  }
  #interior-masthead h1 { 
    color: #96e575; 
  }
- #interior-masthead i { 
+#interior-masthead i { 
    color: #96e575; 
    position: absolute;
    left: 20px;
    font-size: 50px;
  }
+ @media only screen and (max-width: 600px) {
+#interior-masthead i { 
+  left: -10px;
+}
+}
+
+.menu-shown { display: block !important; } 
+.menu-shown li { display: block !important; width: 100%; text-align: center;  }
   #interior-masthead .content-container { 
     max-width: 750px;
     padding-left: 100px; 
     position: relative;
   }
-
+@media only screen and (max-width: 600px) {
+#interior-masthead .content-container { 
+  padding-left: 70px;
+  padding-top: 20px; 
+} 
+ }
 .padded-container { 
   padding-top: 70px;
   padding-bottom: 70px;
 }  
 .large-icon { font-size: 200px; }
-
+@media only screen and (max-width: 600px) {
+.large-icon { font-size: 100px; }
+}
 .grey-bg { background-color: #F7F7F7; }
 .black-bg { background-color:#000; color: #FFF; }
 .black-bg h2, .black-bg h3, .black-bg a { color: #96e575 }
